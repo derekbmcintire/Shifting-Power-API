@@ -1,3 +1,4 @@
 class Tag < ApplicationRecord
-  belongs_to :video
+  has_many :videotags
+  has_many :videos, through: :videotags
 end
