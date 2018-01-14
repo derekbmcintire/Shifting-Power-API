@@ -10,7 +10,7 @@ class TagsController < OpenReadController
 
   # GET /tags/1
   def show
-    render json: @tag.videos
+    render json: @tag
   end
 
   # POST /tags

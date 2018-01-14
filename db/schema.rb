@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180113192610) do
+ActiveRecord::Schema.define(version: 20180114180100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,15 +39,6 @@ ActiveRecord::Schema.define(version: 20180113192610) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
-  create_table "video_tags", force: :cascade do |t|
-    t.bigint "tag_id"
-    t.bigint "video_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["tag_id"], name: "index_video_tags_on_tag_id"
-    t.index ["video_id"], name: "index_video_tags_on_video_id"
-  end
-
   create_table "videos", force: :cascade do |t|
     t.string "title"
     t.string "url"
@@ -65,8 +56,6 @@ ActiveRecord::Schema.define(version: 20180113192610) do
   end
 
   add_foreign_key "examples", "users"
-  add_foreign_key "video_tags", "tags"
-  add_foreign_key "video_tags", "videos"
   add_foreign_key "videotags", "tags"
   add_foreign_key "videotags", "videos"
 end

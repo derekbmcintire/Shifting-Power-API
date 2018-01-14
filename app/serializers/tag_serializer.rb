@@ -1,3 +1,7 @@
 class TagSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :videos
+
+  def videos
+    object.videos.pluck(:id)
+  end
 end
