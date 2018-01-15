@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :userratings
+  resources :userratings, except: %i[new edit]
   resources :reviews
   resources :videotags
   resources :video_tags

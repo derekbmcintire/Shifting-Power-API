@@ -15,7 +15,7 @@ class UserratingsController < OpenReadController
 
   # POST /userratings
   def create
-    @userrating = Userrating.new(userrating_params)
+    @userrating = current_user.userratings.build(userrating_params)
 
     if @userrating.save
       render json: @userrating, status: :created, location: @userrating
@@ -41,11 +41,11 @@ class UserratingsController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_userrating
-      @userrating = Userrating.find(params[:id])
+      @userrating = current_user.userratings.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def userrating_params
-      params.require(:userrating).permit(:rating, :user_id, :video_id)
+      params.require(:userrating).permit(:rating, :video_id)
     end
 end
