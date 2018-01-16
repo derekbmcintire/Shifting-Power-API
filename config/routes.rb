@@ -2,9 +2,7 @@
 
 Rails.application.routes.draw do
   resources :userratings, except: %i[new edit]
-  resources :reviews
   resources :videotags, except: %i[new edit]
-  resources :video_tags
   resources :tags, except: %i[new edit]
   resources :videos, except: %i[new edit]
   resources :examples, except: %i[new edit]

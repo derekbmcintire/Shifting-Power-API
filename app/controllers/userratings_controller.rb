@@ -24,6 +24,7 @@ class UserratingsController < OpenReadController
     end
   end
 
+
   # PATCH/PUT /userratings/1
   def update
     if @userrating.update(userrating_params)
