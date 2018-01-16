@@ -5,7 +5,8 @@ class UserratingsController < OpenReadController
   def index
     if params[:filter]
       @userratings = Userrating.where('user_id' => params[:filter][:user_id], 'video_id' => params[:filter][:video_id])
-      binding.pry
+
+      render json: @userratings
     else
       @userratings = Userrating.all
 
