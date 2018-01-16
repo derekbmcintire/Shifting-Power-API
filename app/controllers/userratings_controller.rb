@@ -1,5 +1,5 @@
 class UserratingsController < OpenReadController
-  before_action :set_userrating, only: [:show, :update, :destroy]
+  before_action :set_userrating, only: [:update, :destroy]
 
   # GET /userratings
   def index
@@ -10,7 +10,7 @@ class UserratingsController < OpenReadController
 
   # GET /userratings/1
   def show
-    render json: @userrating
+    render json: Userrating.find(params[:id])
   end
 
   # POST /userratings
