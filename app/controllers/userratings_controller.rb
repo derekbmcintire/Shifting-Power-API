@@ -3,9 +3,14 @@ class UserratingsController < OpenReadController
 
   # GET /userratings
   def index
-    @userratings = Userrating.all
+    if params[:filter]
+      @userratings = Userrating.where('user_id' => params[:filter][:user_id], 'video_id' => params[:filter][:video_id])
+      binding.pry
+    else
+      @userratings = Userrating.all
 
-    render json: @userratings
+      render json: @userratings
+    end
   end
 
   # GET /userratings/1
