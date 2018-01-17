@@ -17,7 +17,8 @@ Ratings however, give full CRUD functionality to a client and are owned by both 
 
 This API was built using Ruby on Rails with a PostgreSQL database.
 
-## Videos
+## Endpoints
+### Videos
 | Verb | URL | Controller#Action |
 |------|-----|-------------------|
 |GET   |/videos|videos#index   |
@@ -71,7 +72,7 @@ This API was built using Ruby on Rails with a PostgreSQL database.
 }
 ```
 
-## Userratings
+### Userratings
 | Verb | URL | Controller#Action |
 |------|-----|-------------------|
 |GET   |/userratings|userratings#index   |
