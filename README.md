@@ -1,4 +1,4 @@
-#API
+# API
 
 ## Videos
 | Verb | URL | Controller#Action |
