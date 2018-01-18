@@ -5,4 +5,5 @@ class User < ApplicationRecord
   has_many :examples
   has_many :reviews
   has_many :userratings
+  has_many :videos, through: :userratings
 end
