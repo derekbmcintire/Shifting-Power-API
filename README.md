@@ -29,7 +29,7 @@ Ratings however, give full CRUD functionality to a client and are owned by both 
 
 ## ERD
 
-(https://c1.staticflickr.com/5/4710/39772216531_212e2bb867_c.jpg)
+![ERD](https://c1.staticflickr.com/5/4710/39772216531_212e2bb867_c.jpg)
 
 ## Technologies Used
 
