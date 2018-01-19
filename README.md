@@ -8,8 +8,6 @@ Each video will have one or more tags, linking it to a smaller system within the
 
 Ratings however, give full CRUD functionality to a client and are owned by both a user and a video.
 
-(https://c1.staticflickr.com/5/4667/39772208031_2859024c78_b.jpg)
-
 ## Deployed Sites and GitHub Repositories
 
 - [Client GitHub Repository](https://github.com/derekbmcintire/shifting-power-client)
