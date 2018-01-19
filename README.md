@@ -17,20 +17,6 @@ Ratings however, give full CRUD functionality to a client and are owned by both 
 - [API GitHub](https://github.com/derekbmcintire/shifting-power-api)
 - [Deployed API](https://shifting-power.herokuapp.com/)
 
-## User Stories
-
-- A user can register as a user, log in, log out and change password.
-- A user can see a list of videos.
-- A user can watch a video.
-- A user can click on an image of a bicycle and see videos related to that part.
-- A user can rate a video.
-- A user can update their rating of a video.
-- A user can delete their rating of a video.
-
-## ERD
-
-![ERD](https://c1.staticflickr.com/5/4710/39772216531_212e2bb867_c.jpg)
-
 ## Technologies Used
 
 This API was built using Ruby on Rails with a PostgreSQL database.
@@ -161,3 +147,18 @@ HTTP/1.1 204 No Content
 This application was both challenging and exciting to build. It was my first time using a real front end framework and working with both the advantages and limitations that come along with that. I spent my planning time building user stories, wireframes and mapping out the database, and most of the decisions I had to make were around limiting and managing the scope of the project. I feel like there is a lot of potential for this to grow, but I focused on creating an MVP that would give users an idea of how this app could work in the real world.
 
 Working with Ember, I did face some tough challenges, especially with the rating feature, but relied on my class notes and the many resources available to me to push through and create what I envisioned.
+
+
+## User Stories
+
+- A user can register as a user, log in, log out and change password.
+- A user can see a list of videos.
+- A user can watch a video.
+- A user can click on an image of a bicycle and see videos related to that part.
+- A user can rate a video.
+- A user can update their rating of a video.
+- A user can delete their rating of a video.
+
+## ERD
+
+![ERD](https://c1.staticflickr.com/5/4710/39772216531_212e2bb867_c.jpg)
