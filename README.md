@@ -8,12 +8,28 @@ Each video will have one or more tags, linking it to a smaller system within the
 
 Ratings however, give full CRUD functionality to a client and are owned by both a user and a video.
 
+(https://c1.staticflickr.com/5/4667/39772208031_2859024c78_b.jpg)
+
 ## Deployed Sites and GitHub Repositories
 
 - [Client GitHub Repository](https://github.com/derekbmcintire/shifting-power-client)
 - [Deployed Client](https://derekbmcintire.github.io/shifting-power-client/)
 - [API GitHub](https://github.com/derekbmcintire/shifting-power-api)
 - [Deployed API](https://shifting-power.herokuapp.com/)
+
+## User Stories
+
+- A user can register as a user, log in, log out and change password.
+- A user can see a list of videos.
+- A user can watch a video.
+- A user can click on an image of a bicycle and see videos related to that part.
+- A user can rate a video.
+- A user can update their rating of a video.
+- A user can delete their rating of a video.
+
+## ERD
+
+(https://c1.staticflickr.com/5/4710/39772216531_212e2bb867_c.jpg)
 
 ## Technologies Used
 
