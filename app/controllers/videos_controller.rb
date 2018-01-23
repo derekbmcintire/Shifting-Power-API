@@ -13,6 +13,9 @@ class VideosController < OpenReadController
     render json: @video
   end
 
+  # create, update and delete controllers will be available when admin
+  # interface is created
+
   # POST /videos
   # def create
   #   @video = Video.new(video_params)

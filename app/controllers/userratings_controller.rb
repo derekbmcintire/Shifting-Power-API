@@ -3,6 +3,8 @@ class UserratingsController < OpenReadController
 
   # GET /userratings
   def index
+    # if a filter object is passed with params, find the userrating that
+    # matches the user and video ids sent
     if params[:filter]
       @userratings = Userrating.where('user_id' => params[:filter][:user_id], 'video_id' => params[:filter][:video_id])
     else

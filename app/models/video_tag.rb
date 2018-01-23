@@ -1,3 +1,0 @@
-class VideoTag < ApplicationRecord
-
-end

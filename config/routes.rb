@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :userratings, except: %i[new edit]
   resources :videotags, only: %i[index show]
   resources :tags, only: %i[index show]
-  resources :videos, except: %i[new edit]
+  resources :videos, only: %i[index show]
   # resources :examples, except: %i[new edit]
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'

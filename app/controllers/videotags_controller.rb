@@ -13,30 +13,33 @@ class VideotagsController < ApplicationController
     render json: @videotag
   end
 
-  # POST /videotags
-  def create
-    @videotag = Videotag.new(videotag_params)
+  # create, update and delete controllers will be available when admin
+  # interface is created
 
-    if @videotag.save
-      render json: @videotag, status: :created, location: @videotag
-    else
-      render json: @videotag.errors, status: :unprocessable_entity
-    end
-  end
+  # POST /videotags
+  # def create
+  #   @videotag = Videotag.new(videotag_params)
+  #
+  #   if @videotag.save
+  #     render json: @videotag, status: :created, location: @videotag
+  #   else
+  #     render json: @videotag.errors, status: :unprocessable_entity
+  #   end
+  # end
 
   # PATCH/PUT /videotags/1
-  def update
-    if @videotag.update(videotag_params)
-      render json: @videotag
-    else
-      render json: @videotag.errors, status: :unprocessable_entity
-    end
-  end
+  # def update
+  #   if @videotag.update(videotag_params)
+  #     render json: @videotag
+  #   else
+  #     render json: @videotag.errors, status: :unprocessable_entity
+  #   end
+  # end
 
   # DELETE /videotags/1
-  def destroy
-    @videotag.destroy
-  end
+  # def destroy
+  #   @videotag.destroy
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
