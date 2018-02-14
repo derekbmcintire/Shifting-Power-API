@@ -1,5 +1,5 @@
-class VideotagsController < ApplicationController
-  before_action :set_videotag, only: [:show, :update, :destroy]
+class VideotagsController < OpenReadController
+  # before_action :set_videotag, only: [:show, :update, :destroy]
 
   # GET /videotags
   def index
@@ -43,9 +43,9 @@ class VideotagsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_videotag
-      @videotag = Videotag.find(params[:id])
-    end
+    # def set_videotag
+    #   @videotag = Videotag.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def videotag_params

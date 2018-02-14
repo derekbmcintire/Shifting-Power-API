@@ -4,6 +4,7 @@ class VideoSerializer < ActiveModel::Serializer
   def tags
     object.tags.pluck(:id)
   end
+
   def ratings
     object.userratings.pluck(:id)
   end
@@ -12,21 +13,10 @@ class VideoSerializer < ActiveModel::Serializer
     object.users.pluck(:id)
   end
 
+  # returns if the current user has rated the video
   def rated
     if object.users.include?(scope)
       true
     end
   end
-
-
-
-  #
-  # def rated
-  #   if object.users.videos.include?(:id)
-  #     true
-  #   else
-  #     false
-  #   end
-  # end
-
 end

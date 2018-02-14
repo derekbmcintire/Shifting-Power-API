@@ -8,6 +8,7 @@ class UserratingsController < OpenReadController
     if params[:filter]
       @userratings = Userrating.where('user_id' => params[:filter][:user_id], 'video_id' => params[:filter][:video_id])
     else
+      # else return all ratings
       @userratings = Userrating.all
     end
     render json: @userratings
